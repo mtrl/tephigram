@@ -12,5 +12,5 @@ for day in range(0, 5):
     for time in range(start_time, end_time, 100):
         print "Downloading SkewT for day {} and time {}".format(day,time)
         skewt_image = urllib.URLopener()
-        skewt_image.retrieve(url.format(day,time), image_dir.format(day)+"{}.png".format(day,time))
+        skewt_image.retrieve(url.format(day,time), image_dir.format(day)+"{}.png".format(time))
         print "Downloaded!"
