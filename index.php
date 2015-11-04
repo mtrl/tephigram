@@ -16,7 +16,7 @@ foreach($days as $day)
 $day_images_html = "";
 if(isset($_GET['day']))
 {
-  $day_images_html = "<div id="slides">";
+  $day_images_html = "<div id=\"slides\">";
   $day_dir = $image_dir . $_GET['day'] . "/";
   // Day iamges
   $day_images = scandir($day_dir);
