@@ -16,9 +16,8 @@ for day in range(0, 5):
         print time
         if(day == 0):
             day_code = '4'
-
         else:
-            day_code = '%2b' + day
+            day_code = '%2b' + str(day)
         image_url = url.format(day_code,time)
         #time = str(time).zfill(4)
         print "Downloading SkewT for day {} and time {}".format(day,time)
