@@ -16,6 +16,7 @@ foreach($days as $day)
 $day_images_html = "";
 if(isset($_GET['day']))
 {
+  $day_images_html = "<div id="slides">";
   $day_dir = $image_dir . $_GET['day'] . "/";
   // Day iamges
   $day_images = scandir($day_dir);
@@ -26,6 +27,7 @@ if(isset($_GET['day']))
       $day_images_html .= "<img src=\"{$day_dir}{$day_image}\">";
     }
   }
+  $day_images_html .= "</div>";
 }
 ?>
 <!DOCTYPE html>
@@ -80,9 +82,7 @@ if(isset($_GET['day']))
       </div>
       <div class="row">
         <div class="col-lg-12 text-center">
-          <div id="slides">
           <?php echo $day_images_html ?>
-          </div>
         </div>
     </div>
   </div>
@@ -98,8 +98,8 @@ if(isset($_GET['day']))
       width: 1600,
       height: 1600,
       pagination: {
-	active: false,
-}
+      	active: false,
+      }
     });
   });
 </script>
