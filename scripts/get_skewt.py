@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import sys, urllib, os, image
+import sys, urllib, os
 #import sunrise
 # TODO: Set start and end time using a sunrise lib of some sort
 num_days_to_dl = 5
