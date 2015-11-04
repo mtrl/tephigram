@@ -78,8 +78,8 @@ if(isset($_GET['day']))
     <script>
   $(function() {
     $('#slides').slidesjs({
-      width: 940,
-      height: 528,
+      width: 1600,
+      height: 1600,
       pagination: {
 	active: false,
 }
