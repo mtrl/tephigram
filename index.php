@@ -7,18 +7,22 @@ foreach($days as $day)
 {
   if(substr($day,0,1) != ".")
   {
-    $the_date = date("d M Y", time() + ($day * 86400) );
+    $the_date = date("D jS F", time() + ($day * 86400) );
     echo '<a href="?day=' . $day . '">' . $the_date . '</a><br/>';
   }
 }
 
-// Day iamges
-$day_images = scandir($image_dir . $days);
-foreach($day_images as $day_image)
+if(isset($_GET['day']))
 {
-  if(substr($day_images,0,1) != ".")
+  $day_dir = $image_dir . $_GET['day'] . "/";
+  // Day iamges
+  $day_images = scandir($day_dir);
+  foreach($day_images as $day_image)
   {
-
+    if(substr($day_image,0,1) != ".")
+    {
+      echo "<img src=\"{$day_dir}{$day_image}\"><br>";
+    }
   }
 }
-?>
+  ?>
