@@ -23,7 +23,7 @@ if(isset($_GET['day']))
   {
     if(substr($day_image,0,1) != ".")
     {
-      $day_images_html .= "<img src=\"{$day_dir}{$day_image}\"><br>";
+      $day_images_html .= "<img src=\"{$day_dir}{$day_image}\">";
     }
   }
 }
