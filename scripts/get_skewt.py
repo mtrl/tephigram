@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import sys, urllib, os
+import sys, urllib, os, image
 #import sunrise
 # TODO: Set start and end time using a sunrise lib of some sort
 num_days_to_dl = 5
@@ -31,6 +31,7 @@ for day in range(0, num_days_to_dl + 1):
             # TODO: Convert these PNGs to JPG
             #im = Image.open(image_file)
             #im.save(image_file.replace(".png",".jpg"))
-        except:
-            print "Error downloading SkewT chart for day {} and time {}".format(day, time)
+            #os.remove(image_file)
+        except Exception as detail:
+            print "Error downloading SkewT chart for day {} and time {}".format(day, time), detail
 print "Done"
