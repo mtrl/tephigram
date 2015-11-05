@@ -1,12 +1,12 @@
 #!/usr/bin/python
 import sys, urllib, os
-#import sunrise
-# TODO: Set start and end time using a sunrise lib of some sort
 num_days_to_dl = 5
+lat = 52.521483
+lon = -2.877388
 start_time = 700
 end_time = 1800
 time_step = 100
-url = 'http://rasp.inn.leedsmet.ac.uk/cgi-bin/get_rasp_skewt.cgi?region=UK{}&grid=d2&day=0&lat=52.521483&lon=-2.877388&time={}'
+url = 'http://rasp.inn.leedsmet.ac.uk/cgi-bin/get_rasp_skewt.cgi?region=UK{}&grid=d2&day=0&lat={}&lon={}&time={}'.format(lat, lon)
 
 image_dir = os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../images") + "/{}/"
 
