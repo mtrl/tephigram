@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 #slides {
       display: none
     }
@@ -49,12 +53,12 @@
 
     #slides a:link,
     #slides a:visited {
-      color: #333
+      color: #fff
     }
 
     #slides a:hover,
     #slides a:active {
-      color: #9e2020
+      color: #fff
     }
 
     .navbar {
