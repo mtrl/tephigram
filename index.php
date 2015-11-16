@@ -24,7 +24,9 @@ if(isset($_GET['day']))
   {
     if(substr($day_image,0,1) != ".")
     {
-      $day_images_html .= "<img src=\"{$day_dir}{$day_image}\">";
+      $epoch = explode(".", explode("_time_",$day_image)[1])[0];
+      $download_time = date("Y/m/d H:i:s ", $epoch);
+      $day_images_html .= "<div>Downloaded " . $download_time . "<img src=\"{$day_dir}{$day_image}\"></div>";
     }
   }
   $day_images_html .= "</div>";
