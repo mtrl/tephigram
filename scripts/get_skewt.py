@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import sys, urllib, os, time
+import sys, urllib, os, time, shutil
 num_days_to_dl = 5
 lat = "52.521483"
 lon = "-2.877388"
@@ -11,9 +11,12 @@ url = 'http://rasp.inn.leedsmet.ac.uk/cgi-bin/get_rasp_skewt.cgi?region=UK{}&gri
 image_dir = os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../images") + "/{}/"
 
 for day in range(0, num_days_to_dl + 1):
-    if not os.path.exists(image_dir.format(day)):
-        os.makedirs(image_dir.format(day))
-        print "Getting SkewT for day {}".format(day)
+    if os.path.exists(image_dir.format(day)):
+        shutil.rmtree(image_dir.format(day))
+
+    os.makedirs(image_dir.format(day))
+    print "Getting SkewT for day {}".format(day)
+
     for image_time in range(start_time, end_time, time_step):
         image_time = str(image_time).zfill(4)
         if(day == 0):
