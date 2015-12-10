@@ -11,9 +11,6 @@ url = 'http://rasp.inn.leedsmet.ac.uk/cgi-bin/get_rasp_skewt.cgi?region=UK{}&gri
 image_dir = os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../images") + "/{}/"
 
 for day in range(0, num_days_to_dl + 1):
-    # Skip day 1
-    if day == 1:
-        day = 2
     if os.path.exists(image_dir.format(day)):
         shutil.rmtree(image_dir.format(day))
 
