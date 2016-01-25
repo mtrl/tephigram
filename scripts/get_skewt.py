@@ -1,4 +1,5 @@
 #!/usr/bin/python
+from PIL import Image
 import sys, urllib, os, time, shutil
 num_days_to_dl = 5
 lat = "52.521483"
@@ -31,11 +32,12 @@ for day in range(0, num_days_to_dl + 1):
             thetime = str(time.time())
             image_file = image_dir.format(day)+"{}.png".format(image_time);
             skewt_image = urllib.URLopener()
-            skewt_image.retrieve(image_url, image_file.replace(".png", "_time_" + thetime + ".png"))
-            # TODO: Convert these PNGs to JPG
-            #im = Image.open(image_file)
-            #im.save(image_file.replace(".png",".jpg"))
-            #os.remove(image_file)
+            timestamped_filename = image_file.replace(".png", "_time_" + thetime + ".png")
+            skewt_image.retrieve(image_url, timestamped_filename)
+            # Convert the PNGs to JPG
+            im = Image.open(timestamped_filename)
+            im.save(timestamped_filename.replace(".png",".jpg"))
+            os.remove(timestamped_filename)
         except Exception as detail:
             print "Error downloading SkewT chart for day {} and time {}".format(day, image_time), detail
 print "Done"
