@@ -8,6 +8,7 @@ start_time = 700
 end_time = 1800
 time_step = 100
 url = 'http://rasp.inn.leedsmet.ac.uk/cgi-bin/get_rasp_skewt.cgi?region=UK{}&grid=d2&day=0&lat=' + lat + '&lon=' + lon + '&time={}'
+image_dimensions = 1000, 1000
 
 image_dir = os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../images") + "/{}/"
 
@@ -36,7 +37,8 @@ for day in range(0, num_days_to_dl + 1):
             skewt_image.retrieve(image_url, timestamped_filename)
             # Convert the PNGs to JPG
             im = Image.open(timestamped_filename)
-            im.save(timestamped_filename.replace(".png",".jpg"))
+            im.thumbnail(image_dimensions, Image.ANTIALIAS)
+            im.save(timestamped_filename.replace(".png",".jpg"), "JPEG")
             os.remove(timestamped_filename)
         except Exception as detail:
             print "Error downloading SkewT chart for day {} and time {}".format(day, image_time), detail
