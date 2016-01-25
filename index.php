@@ -39,7 +39,7 @@ if(isset($_GET['day']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SkewT for MGC</title>
+    <title>Midland Gliding Club SkewT Charts</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
@@ -74,7 +74,8 @@ if(isset($_GET['day']))
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h1>Midland Gliding Club SkewT Charts</h1>
+          <h1>SkewT Charts for Midland Gliding Club</h1>
+          <p>This page shows SkewT charts for the coordinates 52.521483, -2.877388 and is updated daily at 0800 GMT.</p>
         </div>
       </div>
       <div class="row">
