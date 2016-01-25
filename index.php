@@ -74,7 +74,7 @@ if(isset($_GET['day']))
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h1>MGC SkewT images</h1>
+          <h1>Midland Gliding Club SkewT Charts</h1>
         </div>
       </div>
       <div class="row">
