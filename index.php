@@ -75,7 +75,7 @@ if(isset($_GET['day']))
       <div class="row">
         <div class="col-lg-12 text-center">
           <h1>SkewT Charts for Midland Gliding Club</h1>
-          <p>This page shows SkewT charts for the coordinates <a href="https://www.google.co.uk/maps/place/52%C2%B031'04.1%22N+2%C2%B052'45.1%22W/@52.517812,-2.8813727,678m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0" target="_blank>52.517936, -2.879209</a> and is updated daily at 0800 GMT.</p>
+          <p>This page shows SkewT charts for the coordinates <a href="https://www.google.co.uk/maps/place/52%C2%B031'04.1%22N+2%C2%B052'45.1%22W/@52.517812,-2.8813727,678m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0" target="_blank">52.517936, -2.879209</a> and is updated daily at 0800 GMT.</p>
         </div>
       </div>
       <div class="row">
