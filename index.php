@@ -26,7 +26,8 @@ if(isset($_GET['day']))
     {
       $epoch = explode(".", explode("_time_",$day_image)[1])[0];
       $download_time = date("D d M", $epoch) . " at " . date("H:i:s", $epoch);
-      $day_images_html .= "<div>Last updated " . $download_time . "<img src=\"{$day_dir}{$day_image}\"></div>";
+      $day_images_html .= "<div><img src=\"{$day_dir}{$day_image}\"></div>";
+      $last_updated = "Image updated " . $download_time;
     }
   }
   $day_images_html .= "</div>";
@@ -75,7 +76,9 @@ if(isset($_GET['day']))
       <div class="row">
         <div class="col-lg-12 text-center">
           <h1>SkewT Charts for Midland Gliding Club</h1>
-          <p>This page shows SkewT charts for the coordinates <a href="https://www.google.co.uk/maps/place/52%C2%B031'04.1%22N+2%C2%B052'45.1%22W/@52.517812,-2.8813727,678m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0" target="_blank">52.517936, -2.879209</a> and is updated daily at 0800 GMT.</p>
+          <p>
+            This page shows SkewT charts for the coordinates <a href="https://www.google.co.uk/maps/place/52%C2%B031'04.1%22N+2%C2%B052'45.1%22W/@52.517812,-2.8813727,678m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0" target="_blank">52.517936, -2.879209</a> and is updated daily at 0800 GMT.
+          </p>
         </div>
       </div>
       <div class="row">
@@ -86,6 +89,8 @@ if(isset($_GET['day']))
       <div class="row">
         <div class="col-lg-12 text-center">
           <?php echo $day_images_html ?>
+          <br/>
+          <small><?php echo $last_updated ?></small>
         </div>
     </div>
   </div>
@@ -95,15 +100,16 @@ if(isset($_GET['day']))
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script src="js/jquery.slides.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
     <script>
   $(function() {
     $('#slides').slidesjs({
-      width: 1200,
-      height: 1200,
       pagination: {
       	active: false,
       }
     });
+
+    $.backstretch("images/bg.jpg");
   });
 </script>
   </body>
