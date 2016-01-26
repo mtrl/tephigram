@@ -17,7 +17,7 @@ $day_images_html = "";
 $last_updated = "";
 if(isset($_GET['day']))
 {
-  $day_images_html = "<div id=\"slides\">";
+  $day_images_html = "<ul class=\"bxslider\">";
   $day_dir = $image_dir . intval($_GET['day']) . "/";
   // Day iamges
   $day_images = scandir($day_dir);
@@ -27,11 +27,11 @@ if(isset($_GET['day']))
     {
       $epoch = explode(".", explode("_time_",$day_image)[1])[0];
       $download_time = date("D d M", $epoch) . " at " . date("H:i:s", $epoch);
-      $day_images_html .= "<div><img src=\"{$day_dir}{$day_image}\"></div>";
+      $day_images_html .= "<li><img src=\"{$day_dir}{$day_image}\"></li>";
       $last_updated = "Image updated " . $download_time;
     }
   }
-  $day_images_html .= "</div>";
+  $day_images_html .= "</ul>";
 }
 ?>
 <!DOCTYPE html>
@@ -46,6 +46,7 @@ if(isset($_GET['day']))
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/skewt.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -84,7 +85,7 @@ if(isset($_GET['day']))
       </div>
       <div class="row">
         <div class="col-lg-12 text-center">
-          <?php echo $day_buttons_html ?>
+          <?php echo $day_buttons_html ?><br><br>
         </div>
       </div>
       <div class="row">
@@ -100,19 +101,21 @@ if(isset($_GET['day']))
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <script src="js/jquery.slides.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script>
-  $(function() {
-    $('#slides').slidesjs({
-      width: 800,
-      height: 800,
-      pagination: {
-      	active: false,
-      }
-    });
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        speed: '100',
+        preloadImages: 'all',
+        pager: false,
+        controls: true,
+        autoStart: false,
 
-    $.backstretch("images/bg.jpg");
+      });
+
+      $.backstretch("images/bg.jpg");
   });
 </script>
   </body>

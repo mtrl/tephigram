@@ -108,3 +108,8 @@ img {
     width: 1170px
   }
 }
+
+.bx-wrapper {
+  width: 850px;
+  height: 800px;
+}
