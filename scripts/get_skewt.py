@@ -8,7 +8,7 @@ start_time = 700
 end_time = 1800
 time_step = 100
 url = 'http://rasp.inn.leedsmet.ac.uk/cgi-bin/get_rasp_skewt.cgi?region=UK{}&grid=d2&day=0&lat=' + lat + '&lon=' + lon + '&time={}'
-image_dimensions = 1000, 1000
+image_dimensions = 800, 800
 
 image_dir = os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../images") + "/{}/"
 

@@ -14,6 +14,7 @@ foreach($days as $day)
 }
 
 $day_images_html = "";
+$last_updated = "";
 if(isset($_GET['day']))
 {
   $day_images_html = "<div id=\"slides\">";
@@ -104,8 +105,8 @@ if(isset($_GET['day']))
     <script>
   $(function() {
     $('#slides').slidesjs({
-      width: 1000,
-      height: 1000,
+      width: 800,
+      height: 800,
       pagination: {
       	active: false,
       }
