@@ -15,24 +15,23 @@ foreach($days as $day)
 
 $day_images_html = "";
 $last_updated = "";
-if(isset($_GET['day']))
+$day = isset($_GET['day']) ? $_GET['day'] : 0;
+
+$day_images_html = "<ul class=\"bxslider\">";
+$day_dir = $image_dir . intval($day) . "/";
+// Day iamges
+$day_images = scandir($day_dir);
+foreach($day_images as $day_image)
 {
-  $day_images_html = "<ul class=\"bxslider\">";
-  $day_dir = $image_dir . intval($_GET['day']) . "/";
-  // Day iamges
-  $day_images = scandir($day_dir);
-  foreach($day_images as $day_image)
+  if(substr($day_image,0,1) != ".")
   {
-    if(substr($day_image,0,1) != ".")
-    {
-      $epoch = explode(".", explode("_time_",$day_image)[1])[0];
-      $download_time = date("D d M", $epoch) . " at " . date("H:i:s", $epoch);
-      $day_images_html .= "<li><img src=\"{$day_dir}{$day_image}\"></li>";
-      $last_updated = "Image updated " . $download_time;
-    }
+    $epoch = explode(".", explode("_time_",$day_image)[1])[0];
+    $download_time = date("D d M", $epoch) . " at " . date("H:i:s", $epoch);
+    $day_images_html .= "<li><img src=\"{$day_dir}{$day_image}\"></li>";
+    $last_updated = "Image updated " . $download_time;
   }
-  $day_images_html .= "</ul>";
 }
+$day_images_html .= "</ul>";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -106,8 +105,7 @@ if(isset($_GET['day']))
     <script>
     $(document).ready(function(){
       $('.bxslider').bxSlider({
-        mode: 'fade',
-        speed: '100',
+        speed: '250',
         preloadImages: 'all',
         pager: false,
         controls: true,
@@ -115,7 +113,7 @@ if(isset($_GET['day']))
 
       });
 
-      $.backstretch("images/bg.jpg");
+      $.backstretch("bg.jpg");
   });
 </script>
   </body>
