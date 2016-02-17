@@ -76,6 +76,7 @@ $day_images_html .= "</ul>";
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
+		<br>
           <?php echo $day_buttons_html ?><br><br>
         </div>
       </div>
