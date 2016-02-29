@@ -5,7 +5,7 @@ num_days_to_dl = 5
 lat = "52.517936"
 lon = "-2.879209"
 start_time = 700
-end_time = 1800
+end_time = 2000
 time_step = 100
 url = 'http://rasp.inn.leedsmet.ac.uk/cgi-bin/get_rasp_skewt.cgi?region=UK{}&grid=d2&day=0&lat=' + lat + '&lon=' + lon + '&time={}'
 image_dimensions = 800, 800
