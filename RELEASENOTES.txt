@@ -1,3 +1,15 @@
+commit 4d380b3547e49be12964b93f0e255463545c1568
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Mar 2 09:54:18 2016 +0000
+
+    Added release notes link
+
+commit 75daba9a269e16c14476ed986faedab6c6b7b599
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Mar 2 09:53:18 2016 +0000
+
+    Updated release notes
+
 commit 692dfd8ddf8e0da20fb44d47dc88fd9e40cfe624
 Author: Mark Williams <oi.markwilliams@gmail.com>
 Date:   Wed Mar 2 09:40:58 2016 +0000
