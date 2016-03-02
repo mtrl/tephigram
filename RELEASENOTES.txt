@@ -1,0 +1,418 @@
+commit 692dfd8ddf8e0da20fb44d47dc88fd9e40cfe624
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Mar 2 09:40:58 2016 +0000
+
+    Added the abilit to use keyboard arrows to move around the slides
+
+commit 720a218e1200dd02fa40242567577b4f57794818
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Feb 29 10:33:09 2016 +0000
+
+    Extended chart times to 8pm
+
+commit 91ab677e24102529f8752aef68e97587731d6467
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Feb 29 10:32:40 2016 +0000
+
+    Change page <title> to tephigram from skewt
+
+commit 749be4642411ef43426fc9e309d9307d57f1daea
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Feb 17 10:43:40 2016 +0000
+
+    Added break above slideshow
+
+commit 9f9735a66ce7d8a3699cd951e99a433fa820c091
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Feb 17 10:42:25 2016 +0000
+
+    Removed redirect notice
+
+commit 6cf395d7eb7240a59c0e21bbf5862485220e2d7f
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Feb 3 14:24:10 2016 +0000
+
+    Push script doesnt duplicate deployment of tags
+
+commit 4cd09c8f25804ce2bc28f9ccfefee1058789395c
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Feb 3 14:21:10 2016 +0000
+
+    Updated push scripts and test deployment
+
+commit 9dd77859a5e173e7e942ce02025e6ff9a2fc5fa2
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Feb 3 14:09:40 2016 +0000
+
+    Rejig title
+
+commit 50c455bb6ba1036697f78d38d060688c22ddda6f
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Feb 3 14:07:29 2016 +0000
+
+    Updated page title
+
+commit 34255b3746eafc2ae8a00197e52c7750491619fe
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Feb 3 10:51:49 2016 +0000
+
+    Added an auto deployment script
+
+commit 37edcf41d1d46ad729ed1d2b0881272b0f62ff67
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Feb 3 10:44:43 2016 +0000
+
+    Added moved temp URL message
+
+commit 5d043885d7a84f2c4f21a4c894876b07a0f95980
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Jan 26 14:41:20 2016 +0000
+
+    Moved bg image, slideshow changes
+
+commit 5aa31071e4894d4f52437ad4bf16de7842d9a7ef
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Jan 26 14:37:45 2016 +0000
+
+    Switched the slideshow for a nicer responsive/swipey one
+
+commit fabcd2f8939fb752e0d3c544b2b258e935057710
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Jan 26 09:48:43 2016 +0000
+
+    Resized charts to 800px
+
+commit 85ffd752b3533ba96ce570404246324979464300
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 22:21:35 2016 +0000
+
+    Set width and height for slides
+
+commit 08beff8eff2b1983ca374a455b847e7c1e767ea6
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 22:18:55 2016 +0000
+
+    BG iamge added
+
+commit 89365010d0c43619ecf8c14a9936325769830d0a
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 22:18:48 2016 +0000
+
+    Add bg image to repo
+
+commit b7e959dada59d172a3536b53dc7ea9dd442c186f
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 21:58:36 2016 +0000
+
+    Added background image
+
+commit 5f780928ed0b036a52b55b60ce8b54581e616113
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 17:41:07 2016 +0000
+
+    resize file dimensions on save
+
+commit edd02fa5b94cbacc1f7890f39ca103fadc114afb
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 17:30:59 2016 +0000
+
+    Bug fix in HTML
+
+commit 607f189557cb6bd26ddb000af3b40841e1f7dca6
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 17:30:03 2016 +0000
+
+    Updated coordinates to MGC short west and linked coordinates on webpage to Google maps sat image
+
+commit b00a4969b9ab9e7341be7e116cb00847bedc3f45
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 17:27:20 2016 +0000
+
+    Added description and new page title
+
+commit 34fe520c0dadd62e194c79db297347f4f5eb2fa4
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 17:22:09 2016 +0000
+
+    Updated title on webpage
+
+commit 5c104697e2b00954cbe2c164a913407e96226828
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Jan 25 17:21:34 2016 +0000
+
+    Convert downloaded pngs to jpgs
+
+commit d161f93eecb34da71b19da2c76b87cbab69dd0ec
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Thu Dec 10 15:35:04 2015 +0000
+
+    Undo date fix. A cron time chagne should fix that up instead
+
+commit 3f1d61333b106295ee5e0bc51ae8629d77eec2dd
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Thu Dec 10 14:18:38 2015 +0000
+
+    Fix for day 1 error
+
+commit 146e1867f18b6028d70fec9768d7a79c25faea7d
+Merge: 797349c ef26be1
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Nov 17 16:13:05 2015 +0000
+
+    Merge branch 'release/1.0.1'
+
+commit ef26be18a0675cd302a1dea0b81edd19305d4896
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Nov 17 16:12:52 2015 +0000
+
+    Changed working from "Downloaded" to "Last updated"
+
+commit 797349c3fb7083f7836c36f7b13432a559e7f6c0
+Merge: 42e36f5 9e46c63
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Nov 17 16:09:22 2015 +0000
+
+    Merge branch 'release/1.0'
+
+commit 9e46c636ecd99a52fec2fd092a274e11c17e5455
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Nov 17 16:09:01 2015 +0000
+
+    Reformatted date on images to a more readable format (Tue 17 Nov at 16:00:32
+
+commit 42e36f5062e98c5f921fcb9a3fabda45e6e665f4
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Nov 17 16:06:48 2015 +0000
+
+    Change to remove old skewts before new ones are downloaded
+
+commit 13c035cf147ab462faef3a40364d6c767bda8e28
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Nov 16 12:59:24 2015 +0000
+
+    Bug fix for string split on paths with dots in then
+
+commit 22b0d5514c38cbda65ee30003f7a3faf62a3e97e
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Nov 16 12:58:43 2015 +0000
+
+    Updated css for image width
+
+commit 8125ee2a28ad61137c06a054e6076998c793caf9
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Nov 16 12:53:43 2015 +0000
+
+    PHP script outputs update time of images
+
+commit 0ef21aaa6583bebbea1e6b6ab79888d4befd48ec
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Nov 16 12:46:19 2015 +0000
+
+    python script tags images downloaded with time
+
+commit 7d79e0dae9f2e67d13c44e0588e3ed485b3c037d
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Nov 16 12:29:12 2015 +0000
+
+    Moved next/prev buttons to top of page
+
+commit 08fe050755d659bf4a19a1ff15a231127cd00e60
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Mon Nov 9 09:26:57 2015 +0000
+
+    Removed ability to view filesystem listing via the day request param
+
+commit 5be1d746cc165c862e3820c8a4630ac01075b946
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Thu Nov 5 09:35:00 2015 +0000
+
+    Ignore pyc files
+
+commit 2fde708a609a11f58dd69733f840f248636c0c17
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Thu Nov 5 09:33:08 2015 +0000
+
+    Bug fix in config of python script
+
+commit 21ee1bda57175e488c4dc5a5f7d15f7f0ff8a801
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Thu Nov 5 09:30:11 2015 +0000
+
+    Made the charts a bit smaller  so they display fully on laptops
+
+commit 71fac3e8bd307cb52654ae33060e50074170a7c4
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 16:24:53 2015 +0000
+
+    Bug fix
+
+commit dbe6fb9ab8b8d83d5e58b94187d644930647c10a
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 16:24:14 2015 +0000
+
+    Moved slide container to get day check
+
+commit 02c2af8b933e2f1bf972a36970e43a4d539d4dbe
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 15:10:04 2015 +0000
+
+    Added GA script
+
+commit 665928aa09ae2329cc49cb4ebccb2602ca9e3e5c
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 15:07:55 2015 +0000
+
+    Removed import image from py script
+
+commit 14b6a452e39e9eb3f28658d4a05ae7dd3691b28b
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 15:07:01 2015 +0000
+
+    Set time step to hourly
+
+commit 4842f7f332b59d6576033bcdccdaf06922107f36
+Author: Mark Williams <mark@mtrl.co.uk>
+Date:   Wed Nov 4 15:06:26 2015 +0000
+
+    Set height and width
+
+commit 4f8591fbe357c6fc03f791221dd906b21d343310
+Merge: 2fdadcb 39d8712
+Author: Mark Williams <mark@mtrl.co.uk>
+Date:   Wed Nov 4 15:05:26 2015 +0000
+
+    Merge branch 'master' of github.com:mtrl/skewt
+
+commit 39d871295239cbed92608b87e41d1a4efc1c6200
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 15:05:15 2015 +0000
+
+    Added pull left and right and btn classes to prev/next
+
+commit 2fdadcb0d09bdc77d9aff02453dfe055d0479f32
+Author: Mark Williams <mark@mtrl.co.uk>
+Date:   Wed Nov 4 15:05:02 2015 +0000
+
+    Disabled pagination
+
+commit c9fb32e22e19654b081b234da6bddc2cf9f91f29
+Merge: 47dc335 48a2f61
+Author: Mark Williams <mark@mtrl.co.uk>
+Date:   Wed Nov 4 15:01:16 2015 +0000
+
+    Merge branch 'master' of github.com:mtrl/skewt
+
+commit 47dc335385b070f982752fa6d4a6c9cfb3f0bb27
+Author: Mark Williams <mark@mtrl.co.uk>
+Date:   Wed Nov 4 15:01:09 2015 +0000
+
+    removed br from images
+
+commit 48a2f61e7f4430a4a5e3a9c3d5357134d1daeb2e
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 15:00:58 2015 +0000
+
+    Added CSS
+
+commit 9e2cf7f45828bc3643c6c46061faf4a849cbbe14
+Merge: 26adaca d501228
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 14:58:30 2015 +0000
+
+    Merge branch 'master' of github.com:mtrl/skewt
+
+commit 26adaca54c8e839396d07b01d870ed723b902c86
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 14:55:41 2015 +0000
+
+    Added slideshow
+
+commit e74e28058cfed5269d44a353a4ecafafb41e5dcd
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 10:47:36 2015 +0000
+
+    Started coding for image conversion but unable to get pillow or Imag module to install!"
+
+commit d501228551621dff8cd108ab832837f86eb71dd5
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 10:26:08 2015 +0000
+
+    Create README.md
+
+commit ca44544961aae7c881b32376da639f7db5e42a0a
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 10:05:06 2015 +0000
+
+    Remove DS_Store
+
+commit 8fd4d2b6cacc9e1e384288b6d437377a9ffab52c
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 10:02:43 2015 +0000
+
+    Dir structure and python script updates
+
+commit d91a3d9c270f71ac4dd09cdd618446b77176edf4
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 09:53:04 2015 +0000
+
+    Reorganised structure and bootstrapped index.php
+
+commit ced45d87b72793ef80a8fc6b280d7110bdd6393a
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 09:35:17 2015 +0000
+
+    Started adding image conversion functionality
+
+commit 6c6c51298f1073ddf3b8a63840e0c9e51d5d7413
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 09:26:42 2015 +0000
+
+    Bug fix on skewt.py
+
+commit 1a27b0a133e877bcd91c279907201da1d0056152
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 09:25:29 2015 +0000
+
+    Bug fix on skewt.py
+
+commit 598fa648948e7e17f82c0ed3c3428e66bd9dc748
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 09:24:37 2015 +0000
+
+    Work on index php script
+
+commit 08bd9b6c1c4eaed688245a4d9d21555d0d7025f5
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 09:19:04 2015 +0000
+
+    Hardening work
+
+commit 32564403953b68c7368f6e8475dc29c8ad30eec2
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Wed Nov 4 09:00:10 2015 +0000
+
+    Ignore DS_Store
+
+commit 8db27be9b712b98cbee4af4c2f8056aa5d7d2412
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Nov 3 16:47:51 2015 +0000
+
+    Extended hours and put in some exception handling
+
+commit 77317dfecc41efcbb66808f7da99daf58be0c54c
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Nov 3 14:52:58 2015 +0000
+
+    Padding time with leading zero
+
+commit d102e4f3562a23e4fa6bca1aaa8af59a2ed82fa9
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Nov 3 14:49:37 2015 +0000
+
+    Bug fix
+
+commit b15a9ccf2342728f087c95fb27e19281ee915836
+Author: Mark Williams <oi.markwilliams@gmail.com>
+Date:   Tue Nov 3 14:48:02 2015 +0000
+
+    First commit
