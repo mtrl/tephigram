@@ -84,7 +84,7 @@ $day_images_html .= "</ul>";
         <div class="col-lg-12 text-center">
           <?php echo $day_images_html ?>
           <br/>
-          <small><?php echo $last_updated ?> | <a href="RELEASENOTES.txt">Release notes</a></small>
+          <small><?php echo $last_updated ?> | <a href="https://raw.githubusercontent.com/mtrl/tephigram/master/RELEASENOTES.txt" target="_blank">Release notes</a></small>
         </div>
     </div>
   </div>
