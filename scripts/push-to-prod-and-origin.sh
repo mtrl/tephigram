@@ -1,5 +1,6 @@
 #!/bin/sh
-git tag -n99 > RELEASENOTES.txt
+#git tag -n99 > RELEASENOTES.txt
+git for-each-ref --sort=taggerdate --format '%(taggerdate)%(refname) %(contents)' refs/tags
 git commit -am "Updated release notes"
 echo "--------------------"
 echo "Pushing all to origin"
