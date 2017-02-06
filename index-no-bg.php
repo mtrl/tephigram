@@ -72,22 +72,10 @@ $day_images_html .= "</ul>";
 
 </script>
   </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-		<br>
-          <?php echo $day_buttons_html ?><br><br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
+  <body class="no-bg">
           <?php echo $day_images_html ?>
-          <br/>
+          <br>
           <small><?php echo $last_updated ?> | <a href="https://raw.githubusercontent.com/mtrl/tephigram/master/RELEASENOTES.txt" target="_blank">Release notes</a></small>
-        </div>
-    </div>
-  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -103,7 +91,7 @@ $day_images_html .= "</ul>";
         preloadImages: 'all',
         pager: false,
         controls: true,
-        autoStart: false,
+        autoStart: true,
         onSliderLoad: function() {
                 $("body").keydown(function(e) {
                     if (e.keyCode == 37) { // left
@@ -115,8 +103,6 @@ $day_images_html .= "</ul>";
 
             }
       });
-
-      $.backstretch("bg.jpg");
   });
 </script>
   </body>
