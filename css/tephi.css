@@ -88,6 +88,14 @@ img {
   .container {
     width: auto;
   }
+    .bx-controls-direction {
+        display: none;
+    }
+
+    .btn-group a {
+        max-width: 16vw;
+        overflow: hidden;
+    }
 }
 
 /* For smartphones */
@@ -113,5 +121,4 @@ img {
 
 .bx-wrapper {
   width: 850px;
-  min-height: 85vh;
 }

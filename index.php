@@ -24,7 +24,7 @@ $day_dir = $image_dir . intval($day) . "/";
 $day_images = scandir($day_dir);
 foreach($day_images as $day_image)
 {
-  if(substr($day_image,0,1) != ".")
+  if(substr($day_image, 0, 1) != ".")
   {
     $epoch = explode(".", explode("_time_",$day_image)[1])[0];
     $download_time = date("D d M", $epoch) . " at " . date("H:i:s", $epoch);
@@ -41,7 +41,7 @@ $day_images_html .= "</ul>";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Midland Gliding Club Tephigram</title>
+    <title>Tephigram - Midland Gliding Club</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">

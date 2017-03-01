@@ -1,7 +1,7 @@
 #!/usr/bin/python
 from PIL import Image
 import sys, urllib, os, time, shutil
-num_days_to_dl = 5
+num_days_to_dl = 4
 lat = "52.517936"
 lon = "-2.879209"
 start_time = 700
