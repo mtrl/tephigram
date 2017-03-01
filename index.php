@@ -3,15 +3,16 @@ $image_dir = "images/";
 // get dirs in images
 $days = scandir($image_dir);
 // Get images in dirs
-$day_buttons_html = "";
+$day_buttons_html = '<div class="btn-group">';
 foreach($days as $day)
 {
   if(substr($day,0,1) != ".")
   {
-    $the_date = date("D jS M", time() + ($day * 86400) );
+    $the_date = date("D jS", time() + ($day * 86400) );
     $day_buttons_html .= '<a class="btn btn-info btn-sm" href="?day=' . $day . '">' . $the_date . '</a> ';
   }
 }
+$day_buttons_html .= '</div>';
 
 $day_images_html = "";
 $last_updated = "";
@@ -46,7 +47,7 @@ $day_images_html .= "</ul>";
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/tephi.css">
+    <link rel="stylesheet" href="css/tephi.css?<?php echo time() ?>">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -115,8 +116,6 @@ $day_images_html .= "</ul>";
 
             }
       });
-
-      $.backstretch("bg.jpg");
   });
 </script>
   </body>

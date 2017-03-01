@@ -2,6 +2,12 @@ img {
   max-width: 100%;
 }
 
+.bx-wrapper .bx-viewport {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
 #slides {
       display: none
     }
@@ -79,12 +85,8 @@ img {
 
 /* For tablets & smart phones */
 @media (max-width: 767px) {
-  body {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
   .container {
-    width: auto
+    width: auto;
   }
 }
 
@@ -111,5 +113,5 @@ img {
 
 .bx-wrapper {
   width: 850px;
-  height: 800px;
+  min-height: 85vh;
 }
