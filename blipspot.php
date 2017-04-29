@@ -5,7 +5,7 @@ if(isset($_GET['day'])) {
 }
 // BGA turnpoint
 if(isset($_GET['tp'])) {
-    $tp = $_GET['tp'];
+    $tp = strip_tags($_GET['tp']);
 } else {
     $tp = "MYN";
 }
@@ -135,7 +135,7 @@ foreach($links as $blip) {
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1>MYN Blipspots</h1>
+            <h1><?php echo $tp ?> Blipspots</h1>
             <?php echo $day_buttons_html ?><br><br>
         </div>
     </div>
