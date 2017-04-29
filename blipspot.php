@@ -3,6 +3,12 @@ $selected_day = date('l');
 if(isset($_GET['day'])) {
     $selected_day = $_GET['day'];
 }
+// BGA turnpoint
+if(isset($_GET['tp'])) {
+    $tp = $_GET['tp'];
+} else {
+    $tp = "MYN";
+}
 
 $day_buttons_html = '<div class="btn-group">';
 for($i = 0; $i <= 6; $i++)
@@ -14,7 +20,7 @@ for($i = 0; $i <= 6; $i++)
     if($selected_day == date("l", $day)) {
         $day_buttons_html .= ' active';
     }
-    $day_buttons_html .= '" href="?day=' . date("l", $day) . '">' . $the_date . '</a> ';
+    $day_buttons_html .= '" href="?day=' . date("l", $day) . '&tp=' . $tp . '">' . $the_date . '</a> ';
 }
 $day_buttons_html .= '</div>';
 
@@ -64,8 +70,6 @@ $links = [
 
 $graph_html = "";
 
-// BGA turnpoint
-$tp = "MYN";
 foreach($links as $blip) {
     $graph_html .= "<h2>{$blip['title']}";
     if(!empty($blip['info'])) {
