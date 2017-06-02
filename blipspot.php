@@ -1,6 +1,6 @@
 <?php
 // If the time is after 1600, show tomorrow's forecast
-if(intval(date('H')) > 15) {
+if(intval(date('H')) > 15 && !isset($_GET['day'])) {
     $date = new DateTime();
     $date->add(new DateInterval('P1D'));
     $selected_day = $date->format('l');
