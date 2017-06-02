@@ -1,7 +1,13 @@
 <?php
-$selected_day = date('l');
-if(isset($_GET['day'])) {
+// If the time is after 1600, show tomorrow's forecast
+if(intval(date('H')) > 15) {
+    $date = new DateTime();
+    $date->add(new DateInterval('P1D'));
+    $selected_day = $date->format('l');
+} else if(isset($_GET['day'])) {
     $selected_day = $_GET['day'];
+} else {
+    $selected_day = date('l');
 }
 // BGA turnpoint
 if(isset($_GET['tp'])) {
@@ -135,7 +141,7 @@ foreach($links as $blip) {
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1><?php echo $tp ?> Blipspots</h1>
+            <h1><?php echo $tp ?> Blipspots for <?php echo $selected_day ?></h1>
             <?php echo $day_buttons_html ?><br><br>
         </div>
     </div>
