@@ -61,10 +61,9 @@ $day_buttons_html .= '</div>';
         img.graph {
             background: url('loading.gif') center center no-repeat;
             background-size: contain;
-            width: 700px;
-            min-height: 300px !important;
+            max-height: 700px;
+            min-height: 150px;
         }
-
 
     </style>
 
@@ -157,7 +156,7 @@ $day_buttons_html .= '</div>';
                 },
                 {
                     'title' : 'Boundary Layer Cloud Pc',
-                    'url' : 'http://app.stratus.org.uk/blip/blip_get.php?day=%s&type=blcloudpct&tp={1}&output=plot',
+                    'url' : 'http://app.stratus.org.uk/blip/blip_get.php?day={0}&type=blcloudpct&tp={1}&output=plot',
                     'info' : 'Boundary layer cloud percent is useful to see if over developing. If the sun percent is low but the boundary layer percent is still high, check the Skew-T for top cover.'
                 },
                 {
