@@ -57,6 +57,15 @@ $day_buttons_html .= '</div>';
         img {
             max-width: 100%;
         }
+
+        img.graph {
+            background: url('loading.gif') center center no-repeat;
+            background-size: contain;
+            width: 700px;
+            min-height: 300px !important;
+        }
+
+
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -164,9 +173,7 @@ $day_buttons_html .= '</div>';
 
             var graph_html = "";
 
-
             $(links).each(function(i, blip) {
-//               console.log(el.title);
                 graph_html += "<h2>" + blip.title;
                 if(blip.info != '') {
                     var div_id = blip.title.replace(" ", "");
@@ -176,7 +183,7 @@ $day_buttons_html .= '</div>';
                 } else {
                     graph_html += '</h2>';
                 }
-                  graph_html += "<div><img src='" + blip.url.replace('{0}', selected_day).replace('{1}', '<?php echo $tp ?>') + "' title=''></div>";
+                  graph_html += "<div><img src='" + blip.url.replace('{0}', selected_day).replace('{1}', '<?php echo $tp ?>') + "' class='graph' title=''></div>";
             });
 
             $('.graphs').html(graph_html);
