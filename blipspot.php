@@ -63,6 +63,7 @@ $day_buttons_html .= '</div>';
             background-size: contain;
             max-height: 700px;
             min-height: 150px;
+            height: auto;
         }
 
     </style>
