@@ -7,7 +7,7 @@ lon = "-2.879209"
 start_time = 700
 end_time = 2000
 time_step = 100
-url = 'http://rasp.inn.leedsmet.ac.uk/cgi-bin/get_rasp_plot.cgi?region=UK{}&grid=d2&day=0&lat=' + lat + '&lon=' + lon + '&time={}&plot=skewt'
+url = 'http://rasp-uk.uk/cgi-bin/get_rasp_plot.cgi?region=UK{}&grid=d2&day=0&lat=' + lat + '&lon=' + lon + '&time={}&plot=skewt'
 image_dimensions = 800, 800
 
 image_dir = os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../images") + "/{}/"
