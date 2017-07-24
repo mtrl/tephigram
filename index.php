@@ -1,10 +1,11 @@
 <?php
-$day = isset($_GET['day']) ? $_GET['day'] : 0;
+$selected_day_int = isset($_GET['day']) ? $_GET['day'] : 0;
 // If no date selected and time > 1500, show tomorrow's forecast
 if(!isset($_GET['day']) && date('H') >= 15 ) {
-    $day = 1;
+    $selected_day_int = 1;
 }
-$selected_day =  date('D', time() + ($day * 86400));
+$selected_day_human =  date('D', time() + ($selected_day_int * 86400));
+//echo $selected_day;
 
 $image_dir = "images/";
 // get dirs in images
@@ -17,19 +18,20 @@ foreach($days as $day)
   {
     $the_date = date("D", time() + ($day * 86400) );
     $day_buttons_html .= '<a class="btn btn-info btn-sm';
-    if($selected_day == $the_date) {
+    if($selected_day_human == $the_date) {
         $day_buttons_html .= ' active';
     }
     $day_buttons_html .= '" href="?day=' . $day . '">' . $the_date . '</a> ';
   }
 }
+
 $day_buttons_html .= '</div>';
 
 $day_images_html = "";
 $last_updated = "";
 
 $day_images_html = "<ul class=\"bxslider\">";
-$day_dir = $image_dir . intval($day) . "/";
+$day_dir = $image_dir . intval($selected_day_int) . "/";
 // Day iamges
 $day_images = scandir($day_dir);
 foreach($day_images as $day_image)
