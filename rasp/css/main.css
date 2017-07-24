@@ -1,0 +1,18 @@
+.selectorDiv-toggle {
+	display: none;
+	text-align: center;
+	border: 1px solid red;
+}
+@media only screen and (max-device-width: 480px) {
+	.selectorDiv-toggle {
+		display: block;
+	}
+
+	#selectorDiv {
+		display: none;
+	}
+
+	#imgDiv {
+		margin: 0 -15px;
+	}
+}

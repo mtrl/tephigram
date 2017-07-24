@@ -1,0 +1,40 @@
+.selectorDiv-toggle {
+	display: none;
+	text-align: center;
+	padding: 5px 0;
+	background-color: blue;
+	color: white;
+}
+@media only screen and (max-device-width: 480px) {
+	body, select, textarea {
+		font-family: 'Roboto', sans-serif;
+	}
+	.selectorDiv-toggle {
+		display: block;
+	}
+
+	#selectorDiv {
+		display: none;
+	}
+
+	textarea, select {
+		font-size: 14px;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+
+	#selectors .day td {
+		width: 50%;
+	}
+
+	#selectors .day td select {
+		width: 100%;
+		text-align: center;
+	}
+
+	#paramSelector td, #paramSelector select {
+		width: 100%;
+	}
+}
