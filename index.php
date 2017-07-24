@@ -1,4 +1,11 @@
 <?php
+$day = isset($_GET['day']) ? $_GET['day'] : 0;
+// If no date selected and time > 1500, show tomorrow's forecast
+if(!isset($_GET['day']) && date('H') >= 15 ) {
+    $day = 1;
+}
+$selected_day =  date('D', time() + ($day * 86400));
+
 $image_dir = "images/";
 // get dirs in images
 $days = scandir($image_dir);
@@ -8,15 +15,18 @@ foreach($days as $day)
 {
   if(substr($day,0,1) != ".")
   {
-    $the_date = date("D jS", time() + ($day * 86400) );
-    $day_buttons_html .= '<a class="btn btn-info btn-sm" href="?day=' . $day . '">' . $the_date . '</a> ';
+    $the_date = date("D", time() + ($day * 86400) );
+    $day_buttons_html .= '<a class="btn btn-info btn-sm';
+    if($selected_day == $the_date) {
+        $day_buttons_html .= ' active';
+    }
+    $day_buttons_html .= '" href="?day=' . $day . '">' . $the_date . '</a> ';
   }
 }
 $day_buttons_html .= '</div>';
 
 $day_images_html = "";
 $last_updated = "";
-$day = isset($_GET['day']) ? $_GET['day'] : 0;
 
 $day_images_html = "<ul class=\"bxslider\">";
 $day_dir = $image_dir . intval($day) . "/";
