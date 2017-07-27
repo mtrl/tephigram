@@ -352,11 +352,16 @@ function newMap()
 		streetViewControl:  false,
 		// overviewMapControl:  true,
 		minZoom:            6,
-		maxZoom:            12
-	};
+		maxZoom:            12,
+        zoomControl: false,
+		mapTypeControl: false,
+        scaleControl: false,
+        fullscreenControl: false,
+
+    };
 
 	map = new google.maps.Map(document.getElementById("zoomBox"), mapOptions);
-	return( map );
+    return( map );
 }
 	
 
@@ -1179,7 +1184,7 @@ function loadImage(dirn)
 		}
 
 		if ( opacity_control == "N" ) {	
-			createOpacityControl(map); 
+			createOpacityControl(map);
 			opacity_control = "Y";
 		}
 
