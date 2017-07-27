@@ -62,3 +62,5 @@ Various UX improvements
 
 Thu Jul 27 10:49:21 2017 +0100refs/tags/v1.9 Added index page with links to tools
 
+Thu Jul 27 10:59:50 2017 +0100refs/tags/v1.9.1 Moved release notes to index
+
