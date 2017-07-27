@@ -2,7 +2,8 @@
 	display: none;
 	text-align: center;
 	padding: 5px 0;
-	background-color: blue;
+	background-color: #2b669a;
+	transition: background-color 0.5s ease;
 	color: white;
 }
 @media only screen and (max-device-width: 480px) {
@@ -11,6 +12,10 @@
 	}
 	.selectorDiv-toggle {
 		display: block;
+	}
+
+	.selectorDiv-toggle.open {
+		background-color: #5e5e5e;
 	}
 
 	#selectorDiv {
