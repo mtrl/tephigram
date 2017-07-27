@@ -101,13 +101,6 @@ $day_images_html .= "</ul>";
           <?php echo $day_buttons_html ?><br><br>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <?php echo $day_images_html ?>
-          <br/>
-          <small><?php echo $last_updated ?> | <a href="https://raw.githubusercontent.com/mtrl/tephigram/master/RELEASENOTES.txt" target="_blank">Release notes</a></small>
-        </div>
-    </div>
   </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
