@@ -101,6 +101,11 @@ $day_images_html .= "</ul>";
           <?php echo $day_buttons_html ?><br><br>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <?php echo $day_images_html ?>
+        </div>
+    </div>
   </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
