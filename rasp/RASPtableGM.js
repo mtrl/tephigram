@@ -1200,7 +1200,7 @@ function loadImage(dirn)
 			}
 		}
 
-		addSndMarkers();
+		// addSndMarkers();
 
 		// Handle Centre & Zoom - e.g. if specified in URL
 		google.maps.event.addListener(map, "tilesloaded", function() { overlay.setOpacity()} );
