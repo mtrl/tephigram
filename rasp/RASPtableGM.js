@@ -809,7 +809,7 @@ function setSize()
 
 	// Subtract width of Selectors & add padding
 	imgWid -= (document.getElementById("selectors").offsetWidth + 6 );
-	imgHt  -= 6;
+	imgHt  -= 30;
 
 	// Determine whether image is Portrait or Landscape
 	if(imgHt > imgWid){ Format = "Portrait";  }
