@@ -64,7 +64,7 @@
                     <a class="btn btn-info" href="blipspot.php">Blipspots</a>
                     <a class="btn btn-info" href="rasp">RASPTable*</a>
                 </div>
-                <p><br><small>*RASPTable is in a very alpha state, is really mobile only and needs some attention.</small></p>
+                <p><br><small>*RASPTable is in a very alpha state, is really mobile only and needs some love.</small></p>
             </div>
         </div>
     </div>
