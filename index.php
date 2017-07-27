@@ -34,15 +34,22 @@ $day_images_html = "<ul class=\"bxslider\">";
 $day_dir = $image_dir . intval($selected_day_int) . "/";
 // Day iamges
 $day_images = scandir($day_dir);
-foreach($day_images as $day_image)
-{
-  if(substr($day_image, 0, 1) != ".")
-  {
-    $epoch = explode(".", explode("_time_",$day_image)[1])[0];
-    $download_time = date("D d M", $epoch) . " at " . date("H:i:s", $epoch);
-    $day_images_html .= "<li><img src=\"{$day_dir}{$day_image}\"></li>";
-    $last_updated = "Image updated " . $download_time;
-  }
+//print_r($day_images);
+for($i = 7; $end != true; ++$i) {
+      $day_image = $day_images[$i];
+      if(substr($day_image, 0, 1) != ".")
+      {
+        $epoch = explode(".", explode("_time_",$day_image)[1])[0];
+        $download_time = date("D d M", $epoch) . " at " . date("H:i:s", $epoch);
+        $day_images_html .= "<li><img src=\"{$day_dir}{$day_image}\"></li>";
+        $last_updated = "Image updated " . $download_time;
+      }
+      if($i == 14) {
+          $i = 0;
+      }
+      if($i == 6) {
+          $end = true;
+      }
 }
 $day_images_html .= "</ul>";
 ?>
