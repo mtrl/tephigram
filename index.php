@@ -68,6 +68,12 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <small><a href="https://raw.githubusercontent.com/mtrl/tephigram/master/RELEASENOTES.txt" target="_blank">Release notes</a></small>
+        </div>
+    </div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
