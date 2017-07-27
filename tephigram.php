@@ -104,6 +104,8 @@ $day_images_html .= "</ul>";
       <div class="row">
         <div class="col-lg-12 text-center">
           <?php echo $day_images_html ?>
+          <br/>
+          <small><?php echo $last_updated ?></small>
         </div>
     </div>
   </div>
