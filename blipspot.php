@@ -137,11 +137,6 @@ $day_buttons_html .= '</div>';
                         'info' : 'Note that the \'Stars\' Forecast is experimental and based on original work by Paul Scorer.'
                     },
                     {
-                        'title' : 'Thermal and Cloud',
-                        'url' : 'http://app.stratus.org.uk/blip/blip_main.php?region={0}&tp={1}',
-                        'info' : ''
-                    },
-                    {
                         'title' : 'Wind Direction',
                         'url' : 'http://app.stratus.org.uk/blip/blip_wind_dir.php?region={0}&tp={1}',
                         'info' : ''
@@ -149,6 +144,11 @@ $day_buttons_html .= '</div>';
                     {
                         'title' : 'Wind Speed',
                         'url' : 'http://app.stratus.org.uk/blip/blip_wind.php?region={0}&tp={1}',
+                        'info' : ''
+                    },
+                    {
+                        'title' : 'Thermal and Cloud',
+                        'url' : 'http://app.stratus.org.uk/blip/blip_main.php?region={0}&tp={1}',
                         'info' : ''
                     },
                     {
