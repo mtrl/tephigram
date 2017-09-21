@@ -11,7 +11,7 @@ if(intval(date('H')) > 15 && !isset($_GET['day'])) {
 }
 // BGA turnpoint
 if(isset($_GET['tp'])) {
-    $tp = strip_tags($_GET['tp']);
+    $tp = strtoupper(strip_tags($_GET['tp']));
 } else {
     $tp = "MYN";
 }
