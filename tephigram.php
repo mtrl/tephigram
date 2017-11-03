@@ -34,8 +34,9 @@ $day_images_html = "<ul class=\"bxslider\">";
 $day_dir = $image_dir . intval($selected_day_int) . "/";
 // Day iamges
 $day_images = scandir($day_dir);
+//print_r($day_images);
 $end = false;
-for($i = 6; $end != true; ++$i) {
+for($i = 7; $end != true; ++$i) {
 	$day_image = $day_images[$i];
 	if(substr($day_image, 0, 1) != "." && $day_image != '')
 	{
@@ -44,7 +45,7 @@ for($i = 6; $end != true; ++$i) {
 		$day_images_html .= "<li><img src=\"{$day_dir}{$day_image}\"></li>";
 		$last_updated = "Image updated " . $download_time;
 	}
-	if($i == 14) {
+	if($i == 13) {
 		$i = 0;
 	}
 	if($i == 6) {
