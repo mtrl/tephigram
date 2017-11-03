@@ -37,8 +37,8 @@ $day_images = scandir($day_dir);
 //print_r($day_images);
 for($i = 7; $end != true; ++$i) {
       $day_image = $day_images[$i];
-      if(substr($day_image, 0, 1) != ".")
-      {
+	if(substr($day_image, 0, 1) != "." && $day_image != '')
+	{
         $epoch = explode(".", explode("_time_",$day_image)[1])[0];
         $download_time = date("D d M", $epoch) . " at " . date("H:i:s", $epoch);
         $day_images_html .= "<li><img src=\"{$day_dir}{$day_image}\"></li>";
