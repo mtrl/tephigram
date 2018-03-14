@@ -14,7 +14,7 @@ if ( isset( $_GET['tp'] ) ) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<!--  <link rel="apple-touch-icon" href="blipspot-icon.png">-->
+  <!--  <link rel="apple-touch-icon" href="blipspot-icon.png">-->
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>STAR Forecast</title>
 
@@ -90,7 +90,9 @@ if ( isset( $_GET['tp'] ) ) {
 			$day             = time() + ( $i * 86400 );
 			$the_date        = date( "D", $day );
 			$star_graph_html .= '<div><br>';
+			$star_graph_html .= '<a href="blipspot.php?tp=' . $tp . '&day=' . $the_date . '>';
 			$star_graph_html .= "<img src=\"http://app.stratus.org.uk/blip/blip_stars.php?region=" . date( 'l', $day ) . "&tp={$tp}\">";
+			$star_graph_html .= '</a>';
 		}
 		$star_graph_html .= '</div>';
 
