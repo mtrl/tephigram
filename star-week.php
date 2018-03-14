@@ -90,7 +90,7 @@ if ( isset( $_GET['tp'] ) ) {
 			$day             = time() + ( $i * 86400 );
 			$the_date        = date( "D", $day );
 			$star_graph_html .= '<div><br>';
-			$star_graph_html .= '<a href="blipspot.php?tp=' . $tp . '&day=' . $the_date . '>';
+			$star_graph_html .= '<a href="blipspot.php?tp=' . $tp . '&day=' . $the_date . '"">';
 			$star_graph_html .= "<img src=\"http://app.stratus.org.uk/blip/blip_stars.php?region=" . date( 'l', $day ) . "&tp={$tp}\">";
 			$star_graph_html .= '</a>';
 		}
