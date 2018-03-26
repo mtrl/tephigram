@@ -189,10 +189,13 @@ $day_buttons_html .= '</div>';
             $(links).each(function(i, blip) {
                 graph_html += "<h2>" + blip.title;
                 if(blip.info != '') {
-                    var div_id = blip.title.replace(" ", "");
-                    graph_html += '<a class="glyphicon glyphicon-info-sign" data-toggle="collapse" data-target="#' + div_id + '"></a>';
-                    graph_html += '</h2>';
-                    graph_html += '<p id="' + div_id + '" class="collapse">' + blip.info + '</p>';
+                    var div_id = blip.title;
+                    div_id = div_id.replace(/[ 0-9]/g, '').toLowerCase();
+                    if(blip.info) {
+                        graph_html += '<a class="glyphicon glyphicon-info-sign" data-toggle="collapse" data-target="#' + div_id + '"></a>';
+                        graph_html += '</h2>';
+                        graph_html += '<p id="' + div_id + '" class="collapse">' + blip.info + '</p>';
+                    }
                 } else {
                     graph_html += '</h2>';
                 }
