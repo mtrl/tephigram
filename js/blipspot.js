@@ -79,7 +79,7 @@ $(function() {
             } else {
                 graph_html += '</h2>';
             }
-            graph_html += "<div><img src='" + blip.url.replace('{0}', selected_day).replace('{1}', '<?php echo $tp ?>') + "' class='graph' title=''></div>";
+            graph_html += "<div><img src='" + blip.url.replace('{0}', selected_day).replace('{1}', tp) + "' class='graph' title=''></div>";
         });
 
         $('.graphs').html(graph_html);
