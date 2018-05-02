@@ -31,7 +31,7 @@ for($i = 0; $i <= 6; $i++)
 $day_buttons_html .= '</div>';
 
 $title      = "MGC Tephigram Forecast";
-$body_class = "tephi";
+$body_class = "blipspot";
 $app_icon = "images/blipspot-icon.png";
 $additional_js = array('blipspot.js');
 

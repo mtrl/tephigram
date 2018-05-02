@@ -84,7 +84,7 @@
 .star-week img {
   max-width: 100%; }
 .star-week img.graph {
-  background: url("loading.gif") center center no-repeat;
+  background: url("../loading.gif") center center no-repeat;
   background-size: contain;
   max-height: 700px;
   min-height: 150px;
@@ -97,7 +97,7 @@
 .blipspot img {
   max-width: 100%; }
 .blipspot img.graph {
-  background: url("loading.gif") center center no-repeat;
+  background: url("../loading.gif") center center no-repeat;
   background-size: contain;
   max-height: 700px;
   min-height: 150px;

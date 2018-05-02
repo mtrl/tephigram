@@ -1,6 +1,6 @@
 $(function() {
     // Get the day
-    var selected_day = $('.btn.active').data('day');
+    var selected_day = $('.day-select .btn.active').data('day');
     updateBlips(selected_day);
 
     $('.day-select .btn').on('click', function(el) {
@@ -8,7 +8,7 @@ $(function() {
         $('.btn.active').removeClass('active');
         $(this).addClass('active');
         // Get the day
-        var selected_day = $('.btn.active').data('day');
+        var selected_day = $('.day-select .btn.active').data('day');
         updateBlips(selected_day);
         return false;
     });
