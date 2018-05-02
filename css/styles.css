@@ -1,3 +1,6 @@
+.nav .visible-xs {
+  display: inline-block !important; }
+
 .tephi {
   /* Center the slideshow */
   /* Show active item in the pagination */
@@ -85,5 +88,21 @@
   max-height: 700px;
   min-height: 150px;
   height: auto; }
+
+.blipspot h2 a {
+  font-size: 0.5em;
+  margin-left: 10px;
+  padding-bottom: 0.3em; }
+.blipspot img {
+  max-width: 100%; }
+.blipspot img.graph {
+  background: url("loading.gif") center center no-repeat;
+  background-size: contain;
+  max-height: 700px;
+  min-height: 150px;
+  height: auto; }
+
+.hangarcam img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
