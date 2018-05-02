@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<?php if($app_icon): ?>
-  <link rel="apple-touch-icon" href="<?php echo $app_icon ?>">
-  <?php endif ?>
+	<?php if ( $app_icon ): ?>
+      <link rel="apple-touch-icon" href="<?php echo $app_icon ?>">
+	<?php endif ?>
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title><?php echo $title; ?></title>
 
@@ -18,6 +18,7 @@
         integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
         crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/styles.css">
 
 
@@ -47,3 +48,9 @@
 </head>
 <body class="<?php echo $body_class ?>">
 <div class="container">
+
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-md-offset-3">
+		<?php include( 'partials/nav.php' ) ?>
+    </div>
+  </div>

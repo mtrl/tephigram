@@ -143,3 +143,23 @@
 		height: auto;
 	}
 }
+
+.blipspot {
+	h2 a {
+		font-size: 0.5em;
+		margin-left: 10px;
+		padding-bottom: 0.3em;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	img.graph {
+		background: url('loading.gif') center center no-repeat;
+		background-size: contain;
+		max-height: 700px;
+		min-height: 150px;
+		height: auto;
+	}
+}
