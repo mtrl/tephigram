@@ -33,6 +33,7 @@ $day_buttons_html .= '</div>';
 $title      = "MGC Tephigram Forecast";
 $body_class = "tephi";
 $app_icon = "images/blipspot-icon.png";
+$additional_js = array('blipspot.js');
 
 include_once( 'partials/header.php' );
 

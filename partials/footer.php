@@ -1,10 +1,10 @@
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <small><?php echo get_current_tag() ?> | <a
-            href="https://raw.githubusercontent.com/mtrl/tephigram/master/RELEASENOTES.txt" target="_blank">Release
-          notes</a></small>
-    </div>
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <small><?php echo get_current_tag() ?> | <a
+          href="https://raw.githubusercontent.com/mtrl/tephigram/master/RELEASENOTES.txt" target="_blank">Release
+        notes</a></small>
   </div>
+</div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -14,7 +14,6 @@
         integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
         crossorigin="anonymous"></script>
 <script src="js/jquery.bxslider.min.js"></script>
-<script src="js/blipspot.js"></script>
 <script>
     $(document).ready(function () {
         var slider = $('.bxslider');
@@ -37,6 +36,8 @@
         });
     });
 </script>
-
+<?php foreach ( $additional_js as $js ): ?>
+  <script src="js/<?php echo $js ?>"></script>
+<?php endforeach; ?>
 </body>
 </html>
