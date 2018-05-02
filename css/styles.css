@@ -1,5 +1,6 @@
-.nav .visible-xs {
-  display: inline-block !important; }
+@media (max-width: 767px) {
+  .nav .visible-xs {
+    display: inline-block !important; } }
 
 .tephi {
   /* Center the slideshow */

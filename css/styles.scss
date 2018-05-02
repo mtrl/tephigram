@@ -1,6 +1,9 @@
 .nav {
 	.visible-xs {
-		display: inline-block !important;
+		@media (max-width: 767px) {
+			display: inline-block !important;
+		}
+
 	}
 }
 
