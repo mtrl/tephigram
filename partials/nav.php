@@ -22,7 +22,7 @@
       );
       ?>
     <?php foreach ($buttons as $title => $url): ?>
-      <a class="btn btn-info<?php echo stristr($_SERVER['PHP_SELF'], $url) ? " active" : null ?>" href="<?php echo $url ?>"><?php echo $title ?></a>
+      <a class="btn btn-info<?php echo stristr($_SERVER['PHP_SELF'], $url) && $url != 'rasp' ? " active" : null ?>" href="<?php echo $url ?>"><?php echo $title ?></a>
     <?php endforeach; ?>
   </div>
 </div>
