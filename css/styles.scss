@@ -1,0 +1,145 @@
+.tephi {
+
+	img {
+		max-width: 100%;
+	}
+
+	.bx-wrapper .bx-viewport {
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+	}
+
+	#slides {
+		display: none
+	}
+
+	#slides .slidesjs-navigation {
+		margin-top: 3px;
+	}
+
+	#slides .slidesjs-previous {
+		margin-right: 5px;
+		float: left;
+	}
+
+	#slides .slidesjs-next {
+		margin-right: 5px;
+		float: left;
+	}
+
+	.slidesjs-pagination {
+		margin: 6px 0 0;
+		float: right;
+		list-style: none;
+	}
+
+	.slidesjs-pagination li {
+		float: left;
+		margin: 0 1px;
+	}
+
+	.slidesjs-pagination li a {
+		display: block;
+		width: 13px;
+		height: 0;
+		padding-top: 13px;
+		background-image: url(../img/pagination.png);
+		background-position: 0 0;
+		float: left;
+		overflow: hidden;
+	}
+
+	.slidesjs-pagination li a.active,
+	.slidesjs-pagination li a:hover.active {
+		background-position: 0 -13px
+	}
+
+	.slidesjs-pagination li a:hover {
+		background-position: 0 -26px
+	}
+
+	#slides a:link,
+	#slides a:visited {
+		color: #fff
+	}
+
+	#slides a:hover,
+	#slides a:active {
+		color: #fff
+	}
+
+	.navbar {
+		overflow: hidden
+	}
+
+	/* Center the slideshow */
+	.container {
+		margin: 0 auto
+	}
+
+	/* Show active item in the pagination */
+	.slidesjs-pagination .active {
+		color: red;
+	}
+
+	/* Media quires for a responsive layout */
+
+	/* For tablets & smart phones */
+	@media (max-width: 767px) {
+		.container {
+			width: auto;
+		}
+
+		.btn-group a {
+			max-width: 16vw;
+			overflow: hidden;
+		}
+	}
+
+	/* For smartphones */
+	@media (max-width: 480px) {
+		.container {
+			width: auto
+		}
+	}
+
+	/* For smaller displays like laptops */
+	@media (min-width: 768px) and (max-width: 979px) {
+		.container {
+			width: 724px
+		}
+	}
+
+	/* For larger displays */
+	@media (min-width: 1200px) {
+		.container {
+			width: 1170px
+		}
+	}
+
+	.bx-wrapper {
+		width: 850px;
+	}
+
+}
+
+.star-week {
+	h2 a {
+		font-size: 0.5em;
+		margin-left: 10px;
+		padding-bottom: 0.3em;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	img.graph {
+		background: url('loading.gif') center center no-repeat;
+		background-size: contain;
+		max-height: 700px;
+		min-height: 150px;
+		height: auto;
+	}
+}

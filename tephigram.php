@@ -53,48 +53,13 @@ for($i = 7; $end != true; ++$i) {
 	}
 }
 $day_images_html .= "</ul>";
+
+$title      = "MGC Tephigram Forecast";
+$body_class = "tephi";
+
+include_once( 'partials/header.php' );
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tephigram - Midland Gliding Club</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/tephi.css?<?php echo time() ?>">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<script type="text/javascript">
-
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-78268-21']);
-	_gaq.push(['_gat._forceSSL']);
-	_gaq.push(['_trackPageview']);
-
-	(function () {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
-
-</script>
-  </head>
-  <body>
-    <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
             <h1>MYN Tephigrams</h1>
@@ -111,33 +76,4 @@ $day_images_html .= "</ul>";
     </div>
   </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      var slider = $('.bxslider');
-      slider.bxSlider({
-        speed: '250',
-        preloadImages: 'all',
-        pager: false,
-        controls: true,
-        autoStart: false,
-        onSliderLoad: function() {
-                $("body").keydown(function(e) {
-                    if (e.keyCode == 37) { // left
-                      slider.goToPrevSlide();
-                    } else if(e.keyCode == 39) { // right
-                      slider.goToNextSlide();
-                    }
-                  });
-
-            }
-      });
-  });
-</script>
-  </body>
-</html>
+<?php include_once ('partials/footer.php') ?>

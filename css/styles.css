@@ -1,0 +1,89 @@
+.tephi {
+  /* Center the slideshow */
+  /* Show active item in the pagination */
+  /* Media quires for a responsive layout */
+  /* For tablets & smart phones */
+  /* For smartphones */
+  /* For smaller displays like laptops */
+  /* For larger displays */ }
+  .tephi img {
+    max-width: 100%; }
+  .tephi .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none; }
+  .tephi #slides {
+    display: none; }
+  .tephi #slides .slidesjs-navigation {
+    margin-top: 3px; }
+  .tephi #slides .slidesjs-previous {
+    margin-right: 5px;
+    float: left; }
+  .tephi #slides .slidesjs-next {
+    margin-right: 5px;
+    float: left; }
+  .tephi .slidesjs-pagination {
+    margin: 6px 0 0;
+    float: right;
+    list-style: none; }
+  .tephi .slidesjs-pagination li {
+    float: left;
+    margin: 0 1px; }
+  .tephi .slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(..//img/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden; }
+  .tephi .slidesjs-pagination li a.active,
+  .tephi .slidesjs-pagination li a:hover.active {
+    background-position: 0 -13px; }
+  .tephi .slidesjs-pagination li a:hover {
+    background-position: 0 -26px; }
+  .tephi #slides a:link,
+  .tephi #slides a:visited {
+    color: #fff; }
+  .tephi #slides a:hover,
+  .tephi #slides a:active {
+    color: #fff; }
+  .tephi .navbar {
+    overflow: hidden; }
+  .tephi .container {
+    margin: 0 auto; }
+  .tephi .slidesjs-pagination .active {
+    color: red; }
+  @media (max-width: 767px) {
+    .tephi .container {
+      width: auto; }
+    .tephi .btn-group a {
+      max-width: 16vw;
+      overflow: hidden; } }
+  @media (max-width: 480px) {
+    .tephi .container {
+      width: auto; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .tephi .container {
+      width: 724px; } }
+  @media (min-width: 1200px) {
+    .tephi .container {
+      width: 1170px; } }
+  .tephi .bx-wrapper {
+    width: 850px; }
+
+.star-week h2 a {
+  font-size: 0.5em;
+  margin-left: 10px;
+  padding-bottom: 0.3em; }
+.star-week img {
+  max-width: 100%; }
+.star-week img.graph {
+  background: url("loading.gif") center center no-repeat;
+  background-size: contain;
+  max-height: 700px;
+  min-height: 150px;
+  height: auto; }
+
+/*# sourceMappingURL=styles.css.map */
