@@ -47,10 +47,5 @@
   </script>
 </head>
 <body class="<?php echo $body_class ?>">
+<?php include( 'partials/nav.php' ) ?>
 <div class="container">
-
-  <div class="row">
-    <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-		<?php include( 'partials/nav.php' ) ?>
-    </div>
-  </div>
