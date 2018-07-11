@@ -1,0 +1,21 @@
+$(document).ready(function () {
+    var slider = $('.bxslider');
+    slider.bxSlider({
+        speed: '0',
+        mode: 'fade',
+        preloadImages: 'visible',
+        pager: false,
+        controls: true,
+        autoStart: false,
+        onSliderLoad: function () {
+            $("body").keydown(function (e) {
+                if (e.keyCode == 37) { // left
+                    slider.goToPrevSlide();
+                } else if (e.keyCode == 39) { // right
+                    slider.goToNextSlide();
+                }
+            });
+
+        }
+    });
+});

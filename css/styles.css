@@ -2,7 +2,7 @@
   .nav .visible-xs {
     display: inline-block !important; } }
 
-.tephi {
+.star-map, .tephi {
   /* Center the slideshow */
   /* Show active item in the pagination */
   /* Media quires for a responsive layout */
@@ -10,30 +10,30 @@
   /* For smartphones */
   /* For smaller displays like laptops */
   /* For larger displays */ }
-  .tephi img {
+  .star-map img, .tephi img {
     max-width: 100%; }
-  .tephi .bx-wrapper .bx-viewport {
+  .star-map .bx-wrapper .bx-viewport, .tephi .bx-wrapper .bx-viewport {
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none; }
-  .tephi #slides {
+  .star-map #slides, .tephi #slides {
     display: none; }
-  .tephi #slides .slidesjs-navigation {
+  .star-map #slides .slidesjs-navigation, .tephi #slides .slidesjs-navigation {
     margin-top: 3px; }
-  .tephi #slides .slidesjs-previous {
+  .star-map #slides .slidesjs-previous, .tephi #slides .slidesjs-previous {
     margin-right: 5px;
     float: left; }
-  .tephi #slides .slidesjs-next {
+  .star-map #slides .slidesjs-next, .tephi #slides .slidesjs-next {
     margin-right: 5px;
     float: left; }
-  .tephi .slidesjs-pagination {
+  .star-map .slidesjs-pagination, .tephi .slidesjs-pagination {
     margin: 6px 0 0;
     float: right;
     list-style: none; }
-  .tephi .slidesjs-pagination li {
+  .star-map .slidesjs-pagination li, .tephi .slidesjs-pagination li {
     float: left;
     margin: 0 1px; }
-  .tephi .slidesjs-pagination li a {
+  .star-map .slidesjs-pagination li a, .tephi .slidesjs-pagination li a {
     display: block;
     width: 13px;
     height: 0;
@@ -42,39 +42,42 @@
     background-position: 0 0;
     float: left;
     overflow: hidden; }
-  .tephi .slidesjs-pagination li a.active,
+  .star-map .slidesjs-pagination li a.active,
+  .star-map .slidesjs-pagination li a:hover.active, .tephi .slidesjs-pagination li a.active,
   .tephi .slidesjs-pagination li a:hover.active {
     background-position: 0 -13px; }
-  .tephi .slidesjs-pagination li a:hover {
+  .star-map .slidesjs-pagination li a:hover, .tephi .slidesjs-pagination li a:hover {
     background-position: 0 -26px; }
-  .tephi #slides a:link,
+  .star-map #slides a:link,
+  .star-map #slides a:visited, .tephi #slides a:link,
   .tephi #slides a:visited {
     color: #fff; }
-  .tephi #slides a:hover,
+  .star-map #slides a:hover,
+  .star-map #slides a:active, .tephi #slides a:hover,
   .tephi #slides a:active {
     color: #fff; }
-  .tephi .navbar {
+  .star-map .navbar, .tephi .navbar {
     overflow: hidden; }
-  .tephi .container {
+  .star-map .container, .tephi .container {
     margin: 0 auto; }
-  .tephi .slidesjs-pagination .active {
+  .star-map .slidesjs-pagination .active, .tephi .slidesjs-pagination .active {
     color: red; }
   @media (max-width: 767px) {
-    .tephi .container {
+    .star-map .container, .tephi .container {
       width: auto; }
-    .tephi .btn-group a {
+    .star-map .btn-group a, .tephi .btn-group a {
       max-width: 16vw;
       overflow: hidden; } }
   @media (max-width: 480px) {
-    .tephi .container {
+    .star-map .container, .tephi .container {
       width: auto; } }
   @media (min-width: 768px) and (max-width: 979px) {
-    .tephi .container {
+    .star-map .container, .tephi .container {
       width: 724px; } }
   @media (min-width: 1200px) {
-    .tephi .container {
+    .star-map .container, .tephi .container {
       width: 1170px; } }
-  .tephi .bx-wrapper {
+  .star-map .bx-wrapper, .tephi .bx-wrapper {
     width: 850px; }
 
 .star-week h2 a {

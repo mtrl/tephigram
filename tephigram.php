@@ -56,6 +56,7 @@ $day_images_html .= "</ul>";
 
 $title      = "MGC Tephigram Forecast";
 $body_class = "tephi";
+$additional_js = array('tephigram.js');
 
 include_once( 'partials/header.php' );
 

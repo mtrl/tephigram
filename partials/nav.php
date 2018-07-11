@@ -14,17 +14,18 @@
 	<?php endif ?>
 	<?php
 	$buttons = array(
-		'Tephigrams'    => 'tephigram.php',
-		'Blipspots'     => 'blipspot.php',
-		'STAR forecast' => 'star-week.php',
-		'RASP Table'    => 'rasp',
-		'Hangarcam'     => 'hangarcam.php',
+		'STAR map' => 'star-map.php',
+		'STAR blips' => 'star-week.php',
+		'Tephis'    => 'tephigram.php',
+		'Blips'     => 'blipspot.php',
+		'RASPTable'    => 'rasp',
+		'Hangar'     => 'hangarcam.php',
 	);
 	?>
 
   <div class="btn-group hidden-xs">
 	  <?php foreach ( $buttons as $title => $url ): ?>
-        <a class="btn btn-info<?php echo stristr( $_SERVER['PHP_SELF'], $url ) && $url != 'rasp' ? " active" : null ?>"
+        <a class="btn btn-sm btn-info<?php echo stristr( $_SERVER['PHP_SELF'], $url ) && $url != 'rasp' ? " active" : null ?>"
            href="<?php echo $url ?>"><?php echo $title ?></a>
 	  <?php endforeach; ?>
   </div>
