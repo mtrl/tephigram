@@ -21,7 +21,7 @@ for($i = 0; $i <= 6; $i++)
 {
     $day = time() + ($i * 86400);
     $the_date = date("D", $day );
-    $day_buttons_html .= '<a class="btn btn-info btn-sm';
+    $day_buttons_html .= '<a class="btn btn-info';
     // Set button active
     if($selected_day == date("l", $day)) {
         $day_buttons_html .= ' active';

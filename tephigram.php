@@ -17,7 +17,7 @@ foreach($days as $day)
   if(substr($day,0,1) != ".")
   {
     $the_date = date("D", time() + ($day * 86400) );
-    $day_buttons_html .= '<a class="btn btn-info btn-sm';
+    $day_buttons_html .= '<a class="btn btn-info';
     if($selected_day_human == $the_date) {
         $day_buttons_html .= ' active';
     }
