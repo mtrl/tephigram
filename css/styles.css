@@ -2,6 +2,9 @@
   .nav .visible-xs {
     display: inline-block !important; } }
 
+.star-map .bxslider li {
+  left: 0; }
+
 .star-map, .tephi {
   /* Center the slideshow */
   /* Show active item in the pagination */
