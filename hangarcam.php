@@ -8,8 +8,8 @@ include_once ('partials/header.php');
 	<div class="row">
 		<div class="col-lg-12 text-center">
 			<h1>Latest Hangarcam</h1>
-			loading...
 			<img src="latest_hangarcam_jpeg.php">
+			loading...
 		</div>
 	</div>
 
