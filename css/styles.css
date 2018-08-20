@@ -5,7 +5,7 @@
 .star-map .bxslider li {
   left: 0; }
 
-.star-map, .tephi {
+.wave-forecast, .star-map, .tephi {
   /* Center the slideshow */
   /* Show active item in the pagination */
   /* Media quires for a responsive layout */
@@ -13,30 +13,30 @@
   /* For smartphones */
   /* For smaller displays like laptops */
   /* For larger displays */ }
-  .star-map img, .tephi img {
+  .wave-forecast img, .star-map img, .tephi img {
     max-width: 100%; }
-  .star-map .bx-wrapper .bx-viewport, .tephi .bx-wrapper .bx-viewport {
+  .wave-forecast .bx-wrapper .bx-viewport, .star-map .bx-wrapper .bx-viewport, .tephi .bx-wrapper .bx-viewport {
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none; }
-  .star-map #slides, .tephi #slides {
+  .wave-forecast #slides, .star-map #slides, .tephi #slides {
     display: none; }
-  .star-map #slides .slidesjs-navigation, .tephi #slides .slidesjs-navigation {
+  .wave-forecast #slides .slidesjs-navigation, .star-map #slides .slidesjs-navigation, .tephi #slides .slidesjs-navigation {
     margin-top: 3px; }
-  .star-map #slides .slidesjs-previous, .tephi #slides .slidesjs-previous {
+  .wave-forecast #slides .slidesjs-previous, .star-map #slides .slidesjs-previous, .tephi #slides .slidesjs-previous {
     margin-right: 5px;
     float: left; }
-  .star-map #slides .slidesjs-next, .tephi #slides .slidesjs-next {
+  .wave-forecast #slides .slidesjs-next, .star-map #slides .slidesjs-next, .tephi #slides .slidesjs-next {
     margin-right: 5px;
     float: left; }
-  .star-map .slidesjs-pagination, .tephi .slidesjs-pagination {
+  .wave-forecast .slidesjs-pagination, .star-map .slidesjs-pagination, .tephi .slidesjs-pagination {
     margin: 6px 0 0;
     float: right;
     list-style: none; }
-  .star-map .slidesjs-pagination li, .tephi .slidesjs-pagination li {
+  .wave-forecast .slidesjs-pagination li, .star-map .slidesjs-pagination li, .tephi .slidesjs-pagination li {
     float: left;
     margin: 0 1px; }
-  .star-map .slidesjs-pagination li a, .tephi .slidesjs-pagination li a {
+  .wave-forecast .slidesjs-pagination li a, .star-map .slidesjs-pagination li a, .tephi .slidesjs-pagination li a {
     display: block;
     width: 13px;
     height: 0;
@@ -45,42 +45,45 @@
     background-position: 0 0;
     float: left;
     overflow: hidden; }
-  .star-map .slidesjs-pagination li a.active,
+  .wave-forecast .slidesjs-pagination li a.active,
+  .wave-forecast .slidesjs-pagination li a:hover.active, .star-map .slidesjs-pagination li a.active,
   .star-map .slidesjs-pagination li a:hover.active, .tephi .slidesjs-pagination li a.active,
   .tephi .slidesjs-pagination li a:hover.active {
     background-position: 0 -13px; }
-  .star-map .slidesjs-pagination li a:hover, .tephi .slidesjs-pagination li a:hover {
+  .wave-forecast .slidesjs-pagination li a:hover, .star-map .slidesjs-pagination li a:hover, .tephi .slidesjs-pagination li a:hover {
     background-position: 0 -26px; }
-  .star-map #slides a:link,
+  .wave-forecast #slides a:link,
+  .wave-forecast #slides a:visited, .star-map #slides a:link,
   .star-map #slides a:visited, .tephi #slides a:link,
   .tephi #slides a:visited {
     color: #fff; }
-  .star-map #slides a:hover,
+  .wave-forecast #slides a:hover,
+  .wave-forecast #slides a:active, .star-map #slides a:hover,
   .star-map #slides a:active, .tephi #slides a:hover,
   .tephi #slides a:active {
     color: #fff; }
-  .star-map .navbar, .tephi .navbar {
+  .wave-forecast .navbar, .star-map .navbar, .tephi .navbar {
     overflow: hidden; }
-  .star-map .container, .tephi .container {
+  .wave-forecast .container, .star-map .container, .tephi .container {
     margin: 0 auto; }
-  .star-map .slidesjs-pagination .active, .tephi .slidesjs-pagination .active {
+  .wave-forecast .slidesjs-pagination .active, .star-map .slidesjs-pagination .active, .tephi .slidesjs-pagination .active {
     color: red; }
   @media (max-width: 767px) {
-    .star-map .container, .tephi .container {
+    .wave-forecast .container, .star-map .container, .tephi .container {
       width: auto; }
-    .star-map .btn-group a, .tephi .btn-group a {
+    .wave-forecast .btn-group a, .star-map .btn-group a, .tephi .btn-group a {
       max-width: 16vw;
       overflow: hidden; } }
   @media (max-width: 480px) {
-    .star-map .container, .tephi .container {
+    .wave-forecast .container, .star-map .container, .tephi .container {
       width: auto; } }
   @media (min-width: 768px) and (max-width: 979px) {
-    .star-map .container, .tephi .container {
+    .wave-forecast .container, .star-map .container, .tephi .container {
       width: 724px; } }
   @media (min-width: 1200px) {
-    .star-map .container, .tephi .container {
+    .wave-forecast .container, .star-map .container, .tephi .container {
       width: 1170px; } }
-  .star-map .bx-wrapper, .tephi .bx-wrapper {
+  .wave-forecast .bx-wrapper, .star-map .bx-wrapper, .tephi .bx-wrapper {
     width: 850px; }
 
 .star-week h2 a {

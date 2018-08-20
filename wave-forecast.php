@@ -45,12 +45,13 @@ foreach ( $pressures as $pressure_hpa => $pressure_desc ) {
 		$pressure_buttons_html .= ' active';
 	}
 	$pressure_buttons_html .= '" href="?d=' . $day . '&p=' . $pressure_hpa . '"';
+	$pressure_desc = substr($pressure_desc, 0, stripos($pressure_desc, "("));
 	$pressure_buttons_html      .= '>' . $pressure_desc . '</a> ';
 }
 $pressure_buttons_html .= '</div>';
 
 $title      = "UK Wave Forecast";
-$body_class = "wave-forecase";
+$body_class = "wave-forecast";
 $app_icon   = "images/blipspot-icon.png";
 $additional_js = array( 'wave-forecast.js' );
 
