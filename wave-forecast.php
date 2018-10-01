@@ -7,7 +7,7 @@ if ( ! isset( $_GET['d'] ) && date( 'H' ) >= 15 ) {
 $selected_day_human = date( 'D', time() + ( $selected_day_int * 86400 ) );
 
 // Get selected pressure
-$selected_pressure = isset( $_GET['p'] ) ? $_GET['p'] : '950';
+$selected_pressure = isset( $_GET['p'] ) ? $_GET['p'] : '850';
 
 $image_url = "http://rasp-uk.uk/UK+%d/FCST/press%d.curr.%04dlst.d2.body.png";
 
