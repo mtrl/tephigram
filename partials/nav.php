@@ -1,11 +1,11 @@
 <?php
 $buttons = array(
 	'STAR Map'   => 'star-map.php',
-	'Wave Forecast'   => 'wave-forecast.php',
-	'Welsh Wave Forecast'   => 'wave-forecast-cy.php',
-	'Mynd STAR Blips' => 'star-week.php',
+	'Wave'   => 'wave-forecast.php',
+	'Welsh Wave'   => 'wave-forecast-cy.php',
+	'Mynd STAR' => 'star-week.php',
 	'Mynd Tephigrams'     => 'tephigram.php',
-	'Mynd Blipspots'      => 'blipspot.php',
+	'Mynd Blips'      => 'blipspot.php',
 	'RASPTable'  => 'rasp',
 	'Mynd Hangarcam'     => 'hangarcam.php',
 	'MGC Ladder Entries' => 'https://www.bgaladder.co.uk/Enquiry.asp?Season=2018&SortField=1&SortOrder=DESC&Month=0&SortField2=8&SortOrder2=DESC&Club=MID&PageSize=20&LPID=0&Glider=0&cboPilot=0&Action=Show+Results&cboTP=&iPage=1&PilotID=0&ckSortField=&ckSortField2=&ckSortOrder=&ckSortOrder2=&LO='
