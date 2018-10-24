@@ -2,6 +2,7 @@
 $buttons = array(
 	'STAR Map'   => 'star-map.php',
 	'Wave Map'   => 'wave-forecast.php',
+	'Welsh Wave Map'   => 'wave-forecast-cy.php',
 	'Mynd STAR Blips' => 'star-week.php',
 	'Mynd Tephigrams'     => 'tephigram.php',
 	'Mynd Blips'      => 'blipspot.php',
