@@ -72,7 +72,7 @@ include_once( 'partials/header.php' );
 				for ( $time = 1200; true; $time = $time + 100 ) {
 					if($selected_day_int === '1') {
 						$selected_day_int = '+1';
-					} elseif($selected_day_int === '0') {
+					} elseif($selected_day_int == 0) {
 						$selected_day_int = '';
 					}
 					$img_url = sprintf( $image_url, $selected_day_int, $selected_pressure, $time );
