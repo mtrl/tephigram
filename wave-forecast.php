@@ -29,11 +29,11 @@ for ( $i = 0; $i <= 6; $i ++ ) {
 $day_buttons_html .= '</div>';
 
 $pressures = array(
-	'1000' => '~350 ft (1000 hPa)',
-	'950'  => '~1,800 ft (950 hPa)',
-	'850'  => '~4,800 ft (850 hPa)',
-	'700'  => '~10,000 ft (700 hPa)',
-	'500'  => '~18,000 ft (500 hPa)',
+	'1000' => 'Surface (1000 hPa)',
+	'950'  => '~1,000 ft (950 hPa)',
+	'850'  => '~5,000 ft (850 hPa)',
+	'700'  => '~8,000 ft (700 hPa)',
+	'500'  => '~19,000 ft (500 hPa)',
 );
 
 $pressure_buttons_html = '<div class="btn-group">';
