@@ -24,7 +24,7 @@ for day in range(0, num_days_to_dl + 1):
         if(day == 0):
             day_code = '4'
         else:
-            day_code = '%2b' + str(day)
+            day_code = '4%2b' + str(day)
         image_url = url.format(day_code,image_time)
         #time = str(time).zfill(4)
         print "Downloading SkewT for day {} and time {}".format(day,str(image_time).zfill(4))
