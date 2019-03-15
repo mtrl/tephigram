@@ -45,7 +45,7 @@ include_once( 'partials/header.php' );
             <?php echo $day_buttons_html ?><br><br>
             <form action="blipspot.php" method="get" name="trigraph">
                 <div class="form-group">
-                    <input type="text" name="tp" placeholder="Turnpoint trigraph" value="<?php echo $_GET['tp'] ?>">
+                    <input type="text" name="tp" placeholder="Turnpoint trigraph" value="<?php echo isset($_GET['tp']) ? $_GET['tp'] : '' ?>">
                     <input type="submit" value="Go">
                 </div>
             </form>

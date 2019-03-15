@@ -38,7 +38,7 @@ $pressures = array(
 
 $pressure_buttons_html = '<div class="btn-group">';
 foreach ( $pressures as $pressure_hpa => $pressure_desc ) {
-	$day                   = $_GET['d'] ? $_GET['d'] : '';
+	$day                   = isset($_GET['d']) ? $_GET['d'] : '';
 	$pressure_buttons_html .= '<a class="btn btn-info btn-sm';
 	// Set button active
 	if ( $selected_pressure == $pressure_hpa ) {

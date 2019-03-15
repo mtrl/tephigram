@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<?php if ( $app_icon ): ?>
+	<?php if ( isset($app_icon) ): ?>
       <link rel="apple-touch-icon" href="<?php echo $app_icon ?>">
 	<?php endif ?>
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
